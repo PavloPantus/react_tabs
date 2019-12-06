@@ -1,0 +1,42 @@
+@import 'reset';
+
+.App {
+  width: fit-content;
+  margin: 100px auto;
+
+  &__listOfTabs {
+    display: flex;
+    list-style: none;
+    & li  {
+      margin-right: 25px;
+    }
+  }
+
+  &__tab {
+    background-color: white;
+    border: none;
+    outline: none;
+    transform: translateY(1px);
+    &_active {
+      border-width: 1px 1px 0 1px;
+      border-color: black;
+      border-style: solid;
+      color: red;
+      background-color: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+
+  &__tabContent {
+    padding-top: 10px;
+    width: 600px;
+    height: 300px;
+    border-top: 1px solid black;
+  }
+}
+
