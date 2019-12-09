@@ -8,16 +8,18 @@
     display: flex;
     list-style: none;
     & li  {
-      margin-right: 25px;
+      margin-right: 0;
     }
   }
 
   &__tab {
-    background-color: white;
-    border: none;
+    box-sizing: border-box;
+    background-color: rgb(255, 242, 242);
+    border: 1px solid black;
     outline: none;
-    transform: translateY(1px);
+    height: 50px;
     &_active {
+      transform: translateY(1px);
       border-width: 1px 1px 0 1px;
       border-color: black;
       border-style: solid;
@@ -33,7 +35,7 @@
 
 
   &__tabContent {
-    padding-top: 10px;
+    padding-top: 0;
     width: 600px;
     height: 300px;
     border-top: 1px solid black;
